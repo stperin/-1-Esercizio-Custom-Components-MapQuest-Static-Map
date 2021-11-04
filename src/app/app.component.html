@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-mapquest-static
+  [locations]="['Roma', 'Trieste', 'Palermo']"
+  [zoom]="zoom"
+></app-mapquest-static>
+
+<button (click)="zoom = zoom - 1">-</button>
+<button (click)="zoom = zoom + 1">+</button>
